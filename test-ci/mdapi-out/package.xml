@@ -5,9 +5,5 @@
     <members>SomeRandomClass</members>
     <members>SomeRandomClassTest</members>
   </types>
-  <types>
-    <name>Profile</name>
-    <members>Admin</members>
-  </types>
   <version>46.0</version>
 </Package>
