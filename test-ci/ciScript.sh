@@ -11,7 +11,6 @@ then
     /usr/local/bin/sfdx force:source:convert -d mdapi-out -p $FILE_LIST
 else
     echo "No files have changed since last successful build."
-    currentBuild.result = 'SUCCESS'
-    return
+    export NO_CHANGES=true
 fi
 
