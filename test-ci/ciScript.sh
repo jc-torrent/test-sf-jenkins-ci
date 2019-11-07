@@ -9,8 +9,10 @@ if [ $FILE_LIST ]
 then
     echo $FILE_LIST
     /usr/local/bin/sfdx force:source:convert -d mdapi-out -p $FILE_LIST
+    NO_CHANGES=0
 else
     echo "No files have changed since last successful build."
-    export NO_CHANGES=true
+    NO_CHANGES=1
 fi
+return "$NO_CHANGES"
 
