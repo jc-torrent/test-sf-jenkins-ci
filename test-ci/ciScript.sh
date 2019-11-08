@@ -7,7 +7,7 @@ head files.txt
 FILE_LIST="$(awk '{print}' ORS=',' files.txt | sed '$s/.$//')"
 if [ $FILE_LIST ]
 then
-    /usr/local/bin/sfdx force:source:convert -d mdapi-out -p "$FILE_LIST" --json
+    /usr/local/bin/sfdx force:source:convert -d mdapi-out --sourcepath "$FILE_LIST" --json
 else
     echo "No files have changed since last successful build."
 fi
