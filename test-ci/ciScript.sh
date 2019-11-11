@@ -1,5 +1,5 @@
 #!/bin/sh
-git diff --name-only $1 $2 > temp.txt
+git diff --name-only --diff-filter=d $1 $2 > temp.txt
 grep "^test-ci\/force-app" temp.txt > files.txt
 awk '{gsub(/test-ci\//,"")}1' files.txt > temp.txt && mv temp.txt files.txt
 awk '{$1=$1};1' files.txt > temp.txt && mv temp.txt files.txt
