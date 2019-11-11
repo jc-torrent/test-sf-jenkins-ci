@@ -1,1 +1,4 @@
-force-app/main/default/classes/SomeRandomClass.cls
+force-app/main/default/classes/TestClass1.cls
+force-app/main/default/classes/TestClass1.cls-meta.xml
+force-app/main/default/classes/TestClass2.cls
+force-app/main/default/classes/TestClass2.cls-meta.xml
